@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste - নমস্তে | Spiritual Fashion Store</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-content">
+             🤩ফ্রী ডেলিভেরি শুধু ২১ফেব্রুয়ারির জন্য🤩 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+             🤩ফ্রী ডেলিভেরি শুধু ২১ফেব্রুয়ারির জন্য🤩 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             🤩ফ্রী ডেলিভেরি শুধু ২১ফেব্রুয়ারির জন্য🤩⚡
+        </div>
+    </div>
+
+  <header>
+    <div class="header-container container">
+        <div class="header-top">
+            <div class="logo-section">
+                <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+                <div class="logo">
+                    <img src="/static/img/476074051_29239381618985987_1518786222846598874_n.jpg" alt="Logo">
+                    <h2>Namaste<span> - নমস্তে</span></h2>
+                </div>
+            </div>
+
+            <nav id="nav-menu">
+                <div class="close-menu" onclick="toggleMenu()"><i class="fas fa-times"></i></div>
+                <ul>
+                    <li><a href="#">হোম</a></li>
+                    <li><a href="#">ঠাকুর ঘর</a></li>
+                    <li><a href="#">পূজা সামগ্রী</a></li>
+                    <li><a href="#">পোশাক</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-btns">
+                <button class="icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                <button class="btn-dark">Log In</button>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="search-wrapper">
+                <input type="text" placeholder="কালেকশন খুঁজুন (যেমন: শাড়ি, ধূপদানি...)">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <section class="hero">
+        <div class="hero-left">
+            <h4 class="badge">Namaste - নমস্তে</h4>
+            <h1 class="premium-text">শুদ্ধতায় সাজুক <br> <span>আপনার উপাসনালয়</span></h1>
+            <p>আমাদের বিশেষায়িত ঠাকুরের আসন, প্রিন্টেড প্রিমিয়াম টি-শার্ট এবং পূজা সামগ্রী দিয়ে আপনার জীবনকে করুন ভক্তিপূর্ণ ও নান্দনিক।</p>
+            <div class="hero-cta">
+                <button class="btn-red" onclick="document.querySelector('.collection-section').scrollIntoView({behavior: 'smooth'})">সংগ্রহ দেখুন</button>
+                <button class="btn-outline"><i class="fas fa-play"></i> ভিডিও দেখুন</button>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/static/img/hero 1.png" alt="Shiva T-Shirt" class="floating-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/img/hero 2.png" alt="Krishna T-Shirt" class="floating-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/img/hero 3.png" alt="Durga T-Shirt" class="floating-img">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-shape"></div>
+        </div>
+    </section>
+
+    <section class="full-banner-section">
+        <div class="container">
+            <a href="#collection" class="banner-link">
+                <img src="/static/img/offer.jpg" alt="Puja 50% Off Offer Banner" class="ad-banner-img">
+            </a>
+        </div>
+    </section>
+
+    <section class="collection-section" id="collection">
+        <div class="container">
+            <h2 class="section-title">আমাদের বিশেষ কালেকশন</h2>
+            
+            <div class="tab-control">
+                <button class="tab-item active" onclick="goToSlide(0)">ঠাকুর ঘর</button>
+                <button class="tab-item" onclick="goToSlide(1)">পূজা সামগ্রী</button>
+                <button class="tab-item" onclick="goToSlide(2)">পোশাক</button>
+            </div>
+
+            <div class="swiper productSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/555916158_122169729932767173_8262960601017095201_n.jpg" alt="P"><span class="discount-tag">-১৫%</span></div>
+                                <div class="product-info"><p class="p-name">খয়েরি রঙের সিংহাসন</p><p class="p-price">৳৪৫০০</p><button class="order-now" onclick="handleOrder(4500, 'সিংহাসন')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/574546684_122184576080767173_8073221571562976710_n.jpg" alt="P"></div>
+                                <div class="product-info"><p class="p-name">দেওয়াল সাজানোর </p><p class="p-price">৳১২০০</p><button class="order-now" onclick="handleOrder(1200, 'প্রদীপ')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/597105211_122193727994767173_5606490683825290795_n.jpg" alt="P"></div>
+                                <div class="product-info"><p class="p-name">দেওয়াল সিংহাসন</p><p class="p-price">৳৩০০০</p><button class="order-now" onclick="handleOrder(3000, 'দোলনা')">Order Now</button></div>
+                            </div>
+                             <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/597287480_122193205826767173_6618134782292837685_n.jpg" alt="P"></div>
+                                <div class="product-info"><p class="p-name">কেবিনেট সিংহাসন</p><p class="p-price">৳৩০০০</p><button class="order-now" onclick="handleOrder(3000, 'দোলনা')">Order Now</button></div>
+                            </div>
+                             <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/597105211_122193727994767173_5606490683825290795_n.jpg" alt="P"></div>
+                                <div class="product-info"><p class="p-name">গোপালের দোলনা</p><p class="p-price">৳৩০০০</p><button class="order-now" onclick="handleOrder(3000, 'দোলনা')">Order Now</button></div>
+                            </div>
+                             <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/597105211_122193727994767173_5606490683825290795_n.jpg" alt="P"></div>
+                                <div class="product-info"><p class="p-name">গোপালের দোলনা</p><p class="p-price">৳৩০০০</p><button class="order-now" onclick="handleOrder(3000, 'দোলনা')">Order Now</button></div>
+                            </div>
+                             <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/597105211_122193727994767173_5606490683825290795_n.jpg" alt="P"></div>
+                                <div class="product-info"><p class="p-name">গোপালের দোলনা</p><p class="p-price">৳৩০০০</p><button class="order-now" onclick="handleOrder(3000, 'দোলনা')">Order Now</button></div>
+                            </div>
+                             <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/597105211_122193727994767173_5606490683825290795_n.jpg" alt="P"></div>
+                                <div class="product-info"><p class="p-name">গোপালের দোলনা</p><p class="p-price">৳৩০০০</p><button class="order-now" onclick="handleOrder(3000, 'দোলনা')">Order Now</button></div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/dhup 1.jpg" alt="P"><span class="discount-tag">-১০%</span></div>
+                                <div class="product-info"><p class="p-name">প্রিমিয়াম চন্দনের ধূপকাঠি </p><p class="p-price">৳১৮০</p><button class="order-now" onclick="handleOrder(180, 'ধূপ')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/dhup 2.jpg" alt="P"><span class="discount-tag">-১০%</span></div>
+                                <div class="product-info"><p class="p-name">প্রিমিয়াম সুগন্ধি ধূপকাঠি</p><p class="p-price">৳১৮০</p><button class="order-now" onclick="handleOrder(180, 'ধূপ')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/dhup 3.jpg" alt="P"><span class="discount-tag">-১০%</span></div>
+                                <div class="product-info"><p class="p-name">প্রিমিয়াম সিলভার ধূপকাঠি</p><p class="p-price">৳১৮০</p><button class="order-now" onclick="handleOrder(180, 'ধূপ')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/dhup 4.jpg" alt="P"><span class="discount-tag">-১০%</span></div>
+                                <div class="product-info"><p class="p-name">প্রিমিয়াম আতর ধূপকাঠি</p><p class="p-price">৳১৮০</p><button class="order-now" onclick="handleOrder(180, 'ধূপ')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/dhup 5.jpg" alt="P"><span class="discount-tag">-১০%</span></div>
+                                <div class="product-info"><p class="p-name">প্রিমিয়াম রজনিগন্ধা ধূপকাঠি</p><p class="p-price">৳১৮০</p><button class="order-now" onclick="handleOrder(180, 'ধূপ')">Order Now</button></div>
+                            </div>
+                             <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/dhup 6.jpeg" alt="P"><span class="discount-tag">-১০%</span></div>
+                                <div class="product-info"><p class="p-name">বিভিন্ন রঙের মোমবাতি</p><p class="p-price">৳১৮০</p><button class="order-now" onclick="handleOrder(180, 'ধূপ')">Order Now</button></div>
+                            </div>
+                             <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/dhup 1.jpg" alt="P"><span class="discount-tag">-১০%</span></div>
+                                <div class="product-info"><p class="p-name">প্রিমিয়াম চন্দনা ধূপ</p><p class="p-price">৳১৮০</p><button class="order-now" onclick="handleOrder(180, 'ধূপ')">Order Now</button></div>
+                            </div>
+                             <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/dhup 1.jpg" alt="P"><span class="discount-tag">-১০%</span></div>
+                                <div class="product-info"><p class="p-name">প্রিমিয়াম চন্দনা ধূপ</p><p class="p-price">৳১৮০</p><button class="order-now" onclick="handleOrder(180, 'ধূপ')">Order Now</button></div>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/shirt 1.jpg" alt="P"><span class="discount-tag">-২০%</span></div>
+                                <div class="product-info"><p class="p-name">শিব প্রিন্টেড টি-শার্ট</p><p class="p-price">৳৭৯৯</p><button class="order-now" onclick="handleOrder(799, 'টি-শার্ট')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/shirt 2.jpg" alt="P"><span class="discount-tag">-২০%</span></div>
+                                <div class="product-info"><p class="p-name">গনেশ প্রিন্টেড টি-শার্ট</p><p class="p-price">৳৭৯৯</p><button class="order-now" onclick="handleOrder(799, 'টি-শার্ট')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/shirt 3.jpg" alt="P"><span class="discount-tag">-২০%</span></div>
+                                <div class="product-info"><p class="p-name">কৃষ্ণ প্রিন্টেড টি-শার্ট</p><p class="p-price">৳৭৯৯</p><button class="order-now" onclick="handleOrder(799, 'টি-শার্ট')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/shirt 4.jpg" alt="P"><span class="discount-tag">-২০%</span></div>
+                                <div class="product-info"><p class="p-name">শিব প্রিন্টেড টি-শার্ট</p><p class="p-price">৳৭৯৯</p><button class="order-now" onclick="handleOrder(799, 'টি-শার্ট')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/shirt 5.jpg" alt="P"><span class="discount-tag">-২০%</span></div>
+                                <div class="product-info"><p class="p-name">৺ প্রিন্টেড টি-শার্ট</p><p class="p-price">৳৭৯৯</p><button class="order-now" onclick="handleOrder(799, 'টি-শার্ট')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/shirt 6.jpg" alt="P"><span class="discount-tag">-২০%</span></div>
+                                <div class="product-info"><p class="p-name">ত্রিশুল প্রিন্টেড টি-শার্ট</p><p class="p-price">৳৭৯৯</p><button class="order-now" onclick="handleOrder(799, 'টি-শার্ট')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/shirt 1.jpg" alt="P"><span class="discount-tag">-২০%</span></div>
+                                <div class="product-info"><p class="p-name">শিব প্রিন্টেড টি-শার্ট</p><p class="p-price">৳৭৯৯</p><button class="order-now" onclick="handleOrder(799, 'টি-শার্ট')">Order Now</button></div>
+                            </div>
+                            <div class="product-card">
+                                <div class="img-wrapper"><img src="/static/img/shirt 1.jpg" alt="P"><span class="discount-tag">-২০%</span></div>
+                                <div class="product-info"><p class="p-name">শিব প্রিন্টেড টি-শার্ট</p><p class="p-price">৳৭৯৯</p><button class="order-now" onclick="handleOrder(799, 'টি-শার্ট')">Order Now</button></div>
+                            </div>
+                            
+                            </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <div class="stat-item">
+            <h2 id="customer-count">0</h2>
+            <p>Happy Customers</p>
+        </div>
+        <div class="stat-item">
+            <h2 id="sale-count">0</h2>
+            <p>Successful Sales</p>
+        </div>
+        <div class="stat-item">
+            <h2>4.9/5</h2>
+            <p>User Rating</p>
+        </div>
+    </section>
+
+    <footer class="amazon-footer">
+        <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            Back to top
+        </div>
+
+        <div class="footer-main container">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Namaste</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell on Namaste</a></li>
+                    <li><a href="#">Supply Chain</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Namaste Payment</h3>
+                <ul>
+                    <li><a href="#">Namaste Business Card</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Shipping Rates</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-middle">
+            <div class="logo">
+                <h2>Namaste<span> - নমস্তে</span></h2>
+            </div>
+            <div class="footer-controls">
+                <a href="https://facebook.com/yourpage" target="_blank" class="social-btn fb">
+                    <i class="fab fa-facebook-f"></i> 
+                </a>
+                <a href="https://youtube.com/yourchannel" target="_blank" class="social-btn yt">
+                    <i class="fab fa-youtube"></i> 
+                </a>
+                <a href="https://instagram.com/yourprofile" target="_blank" class="social-btn insta">
+                    <i class="fab fa-instagram"></i> 
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="bottom-links">
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Your Ads Privacy Choices</a>
+                </div>
+                <p>&copy; 2026, Namaste.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/static/js/index.js"></script>
+</body>
+</html>
